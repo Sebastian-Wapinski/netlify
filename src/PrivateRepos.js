@@ -10,7 +10,7 @@ async function getRepos(filter) {
 export default function Repos() {
   const [reposList, setRepoList] = useState([]);
   useEffect(() => {
-    getRepos('task-html').then(data => setRepoList(data));
+    getRepos('task').then(data => setRepoList(data));
   }, []);
 
   return (
